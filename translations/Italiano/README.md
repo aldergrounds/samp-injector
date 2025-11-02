@@ -161,7 +161,7 @@ Il file di intestazione principale della libreria **C++** da includere è `libra
 Il frammento rilevante di `main.cpp` che dimostra l'integrazione è il seguente:
 ```cpp
 // Estrae gli argomenti della riga di comando
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (validazione del numero di argomenti e della modalità di iniezione) ...

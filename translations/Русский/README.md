@@ -161,7 +161,7 @@ public class Launcher {
 Соответствующий фрагмент `main.cpp`, демонстрирующий интеграцию, выглядит следующим образом:
 ```cpp
 // Извлекает аргументы командной строки
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (проверка количества аргументов и режима инъекции) ...

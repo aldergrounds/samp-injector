@@ -161,7 +161,7 @@ Główny plik nagłówkowy biblioteki **C++** to `libraries/samp-injector/cpp/in
 Istotny fragment `main.cpp`, który pokazuje integrację, jest następujący:
 ```cpp
 // Pobiera argumenty wiersza poleceń
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (weryfikacja liczby argumentów i trybu wstrzykiwania) ...

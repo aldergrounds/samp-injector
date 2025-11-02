@@ -161,7 +161,7 @@ The main header file of the **C++** library to be included is `libraries/samp-in
 The relevant section of `main.cpp` demonstrating the integration is as follows:
 ```cpp
 // Extracts command-line arguments
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (validation of the number of arguments and injection mode) ...

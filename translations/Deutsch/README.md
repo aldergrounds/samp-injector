@@ -161,7 +161,7 @@ Die Hauptheader-Datei der **C++**-Bibliothek, die eingebunden werden muss, ist `
 Der relevante Abschnitt der `main.cpp`, der die Integration zeigt, ist wie folgt:
 ```cpp
 // Extrahiert die Kommandozeilenargumente
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (Validierung der Anzahl der Argumente und des Injektionsmodus) ...

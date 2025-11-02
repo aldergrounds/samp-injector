@@ -161,7 +161,7 @@ public class Launcher {
 `main.cpp` dosyasındaki entegrasyonu gösteren ilgili bölüm şöyledir:
 ```cpp
 // Komut satırı argümanlarını çıkarır
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (argüman sayısı ve enjeksiyon modu doğrulaması) ...

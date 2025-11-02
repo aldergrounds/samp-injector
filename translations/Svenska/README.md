@@ -161,7 +161,7 @@ Det huvudsakliga rubrikfilen för **C++**-biblioteket som ska inkluderas är `li
 Det relevanta avsnittet av `main.cpp` som visar integrationen är följande:
 ```cpp
 // Extraherar kommandoradsargument
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (validering av antalet argument och injektionsläge) ...

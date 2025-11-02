@@ -161,7 +161,7 @@ El archivo de cabecera principal de la biblioteca **C++** que debe incluirse es 
 El fragmento relevante de `main.cpp` que demuestra la integración es el siguiente:
 ```cpp
 // Extrae los argumentos de la línea de comandos
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (validación del número de argumentos y modo de inyección) ...

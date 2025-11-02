@@ -161,7 +161,7 @@ O principal arquivo de cabeçalho da biblioteca **C++** a ser incluído é `libr
 O trecho relevante do `main.cpp` que demonstra a integração é o seguinte:
 ```cpp
 // Extrai os argumentos da linha de comando
-int argc;
+int argc = 0;
 std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
 // ... (validação do número de argumentos e modo de injeção) ...
