@@ -3,11 +3,12 @@
  * executable for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer)     *
  * ============================================================================= *
  *                                                                               *
- * Copyright (c) 2025, SPC (SA-MP Programming Community)                         *
+ * Copyright (c) 2025, AlderGrounds                                              *
  * All rights reserved.                                                          *
  *                                                                               *
  * Developed by: Calasans                                                        *
- * Repository: https://github.com/spc-samp/samp-injector                         *
+ * Provided by: AlderGrounds                                                     *
+ * Repository: https://github.com/aldergrounds/samp-injector                     *
  *                                                                               *
  * - This file is part of the SA-MP Injector project.                            *
  *                                                                               *
@@ -31,7 +32,7 @@
 
 #include <windows.h>
 
-SPC_ICON ICON "icons\spc.ico"
+AG_ICON ICON "icons\ag.ico"
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION 1,0,0,0
@@ -53,14 +54,14 @@ BEGIN
     BEGIN
         BLOCK "040904b0"
         BEGIN
-            VALUE "CompanyName", "SA-MP Programming Community"
+            VALUE "CompanyName", "AlderGrounds"
             VALUE "ProductName", "SA-MP Injector"
             VALUE "FileDescription", "SA-MP Injector is an executable for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer). It injects samp.dll for SA-MP, or both samp.dll and omp-client.dll for OMP, enabling the game to launch via command line with customized parameters to connect to a server."
             VALUE "FileVersion", "1.0.0"
             VALUE "ProductVersion", "1.0.0"
             VALUE "InternalName", "samp-injector"
             VALUE "OriginalFilename", "samp-injector.exe"
-            VALUE "LegalCopyright", "Copyright (C) 2025 SA-MP Programming Community. All rights reserved."
+            VALUE "LegalCopyright", "Copyright (C) 2025 AlderGrounds. All rights reserved."
         END
     END
     BLOCK "VarFileInfo"

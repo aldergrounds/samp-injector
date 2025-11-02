@@ -3,11 +3,12 @@
  * executable for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer)     *
  * ============================================================================= *
  *                                                                               *
- * Copyright (c) 2025, SPC (SA-MP Programming Community)                         *
+ * Copyright (c) 2025, AlderGrounds                                              *
  * All rights reserved.                                                          *
  *                                                                               *
  * Developed by: Calasans                                                        *
- * Repository: https://github.com/spc-samp/samp-injector                         *
+ * Provided by: AlderGrounds                                                     *
+ * Repository: https://github.com/aldergrounds/samp-injector                     *
  *                                                                               *
  * - This file is part of the SA-MP Injector project.                            *
  *                                                                               *
@@ -38,14 +39,14 @@
 namespace {
     void Show_Usage() {
         MessageBoxW(nullptr, L"Invalid command line arguments. Please use the following format:\n\n" L"samp-injector.exe <mode> <directory> <nickname> <IP> <port> <password (optional)>\n\n"
-            L"Valid modes are 'samp' or 'omp'.", L"SA-MP Injector Error - SPC", MB_OK | MB_ICONERROR);
+            L"Valid modes are 'samp' or 'omp'.", L"SA-MP Injector Error", MB_OK | MB_ICONERROR);
     }
 
     bool Parse_Inject_Type(const std::wstring& type) {
         if (type == L"samp" || type == L"omp")
             return true;
 
-        MessageBoxW(nullptr, L"Invalid injection mode specified. Please use 'samp' or 'omp'.", L"SA-MP Injector Error - SPC", MB_OK | MB_ICONERROR);
+        MessageBoxW(nullptr, L"Invalid injection mode specified. Please use 'samp' or 'omp'.", L"SA-MP Injector Error", MB_OK | MB_ICONERROR);
 
         return false;
     }
@@ -56,7 +57,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance, _
     std::unique_ptr<LPWSTR[], decltype(&LocalFree)> argv(CommandLineToArgvW(GetCommandLineW(), &argc), &LocalFree);
 
     if (!argv)
-        return (MessageBoxW(nullptr, L"Failed to parse command line arguments. Unable to retrieve necessary information.", L"SA-MP Injector Error - SPC", MB_OK | MB_ICONERROR), 1);
+        return (MessageBoxW(nullptr, L"Failed to parse command line arguments. Unable to retrieve necessary information.", L"SA-MP Injector Error", MB_OK | MB_ICONERROR), 1);
 
     if (argc < 6 || argc > 7)
         return (Show_Usage(), 1);
