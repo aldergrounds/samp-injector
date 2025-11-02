@@ -3,13 +3,12 @@
  * DLL for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer)            *
  * ============================================================================= *
  *                                                                               *
- * Copyright (c) 2025, SPC (SA-MP Programming Community)                         *
+ * Copyright (c) 2025, AlderGrounds                                              *
  * All rights reserved.                                                          *
  *                                                                               *
  * Developed by: Calasans                                                        *
- * Repository: https://github.com/spc-samp/samp-injector                         *
- *                                                                               *
- * - This file is part of the SA-MP Injector project.                            *
+ * Provided by: AlderGrounds                                                     *
+ * Repository: https://github.com/aldergrounds/samp-injector                     *
  *                                                                               *
  * ============================================================================= *
  *                                                                               *
@@ -41,14 +40,14 @@
 namespace {
     void Show_Usage() {
         MessageBoxW(nullptr, L"Invalid arguments for 'Launch_Game' function.\n\n" L"Expected format:\n" L"Launch_Game(<mode>, <folder>, <nickname>, <IP>, <port>, <password (optional)>)\n\n"
-            L"Valid modes are 'samp' or 'omp'.", L"SA-MP Injector Error - SPC", MB_OK | MB_ICONERROR);
+            L"Valid modes are 'samp' or 'omp'.", L"SA-MP Injector Error", MB_OK | MB_ICONERROR);
     }
 
     bool Parse_Inject_Type(const std::wstring& type) {
         if (type == L"samp" || type == L"omp")
             return true;
 
-        MessageBoxW(nullptr, L"Invalid injection mode specified. Please use 'samp' or 'omp'.", L"SA-MP Injector Error - SPC", MB_OK | MB_ICONERROR);
+        MessageBoxW(nullptr, L"Invalid injection mode specified. Please use 'samp' or 'omp'.", L"SA-MP Injector Error", MB_OK | MB_ICONERROR);
 
         return false;
     }
@@ -85,7 +84,7 @@ SAMP_INJECTOR_DLL_API int __stdcall Launch_Game(const wchar_t* mode, const wchar
         std::wstring error_msg = L"Failed to create the game launch thread: ";
         error_msg += what_wide;
 
-        MessageBoxW(nullptr, error_msg.c_str(), L"SA-MP Injector Critical Error - SPC", MB_OK | MB_ICONERROR);
+        MessageBoxW(nullptr, error_msg.c_str(), L"SA-MP Injector Critical Error", MB_OK | MB_ICONERROR);
 
         return 2;
     }
@@ -95,11 +94,11 @@ SAMP_INJECTOR_DLL_API int __stdcall Launch_Game(const wchar_t* mode, const wchar
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
     switch (ul_reason_for_call) {
-    case DLL_PROCESS_ATTACH:
-    case DLL_THREAD_ATTACH:
-    case DLL_THREAD_DETACH:
-    case DLL_PROCESS_DETACH:
-        break;
+        case DLL_PROCESS_ATTACH:
+        case DLL_THREAD_ATTACH:
+        case DLL_THREAD_DETACH:
+        case DLL_PROCESS_DETACH:
+            break;
     }
 
     return TRUE;
