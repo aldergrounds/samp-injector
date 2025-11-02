@@ -1,8 +1,8 @@
 # SA-MP Injector
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![SA-MP | OMP](https://img.shields.io/badge/Support-SA--MP%20%7C%20OMP-yellow)](https://github.com/spc-samp/samp-injector)
-[![x86 Only](https://img.shields.io/badge/Architecture-x86%20(32--bit)-orange)](https://github.com/spc-samp/samp-injector)
+[![SA-MP | OMP](https://img.shields.io/badge/Support-SA--MP%20%7C%20OMP-yellow)](https://github.com/aldergrounds/samp-injector)
+[![x86 Only](https://img.shields.io/badge/Architecture-x86%20(32--bit)-orange)](https://github.com/aldergrounds/samp-injector)
 
 **SA-MP Injector** är ett mångsidigt verktyg designat för **SA-MP (San Andreas Multiplayer)** och **OMP (Open Multiplayer)**, som fungerar som ett **kommandoradsexekverbart program**, en **dynamisk bibliotek (DLL)** och en **samling bibliotek för olika programmeringsspråk**. Dess huvudsakliga funktion är att injicera `samp.dll` (i fallet med **SA-MP**) eller både `samp.dll` och `omp-client.dll` (i fallet med **OMP**) i processen för **GTA:SA**, vilket gör det möjligt att starta spelet med anpassade parametrar och möjliggöra direkt anslutning till en server.
 
@@ -154,9 +154,9 @@ public class Launcher {
 
 ### Användning av C++-biblioteket i den körbara filen
 
-Den körbara filen `samp-injector.exe` är byggd på biblioteket [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp), som finns i katalogen `libraries/cpp/`. Filen `main.cpp` i den körbara filen använder funktionerna i detta bibliotek för att utföra injektion och lansering av spelet.
+Den körbara filen `samp-injector.exe` är byggd på biblioteket [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp), som finns i katalogen `libraries/cpp/`. Filen `main.cpp` i den körbara filen använder funktionerna i detta bibliotek för att utföra injektion och lansering av spelet.
 
-Det huvudsakliga rubrikfilen för **C++**-biblioteket som ska inkluderas är `libraries/samp-injector/cpp/injector.hpp`. Eftersom biblioteket [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) är **header-only**, kräver dess användning endast inkludering av denna rubrik i källkoden, utan behov av att länka en `.lib`-fil.
+Det huvudsakliga rubrikfilen för **C++**-biblioteket som ska inkluderas är `libraries/samp-injector/cpp/injector.hpp`. Eftersom biblioteket [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) är **header-only**, kräver dess användning endast inkludering av denna rubrik i källkoden, utan behov av att länka en `.lib`-fil.
 
 Det relevanta avsnittet av `main.cpp` som visar integrationen är följande:
 ```cpp
@@ -185,18 +185,18 @@ Funktionen `Initialize_Game` fungerar som bibliotekets högnivågränssnitt och 
 
 ### Hur man kompilerar
 
-Du kan kompilera `samp-injector.exe` från källkoden. Om du inte vill kompilera kan du ladda ner förkompilerade versioner i avsnittet [Releases](https://github.com/spc-samp/samp-injector/releases).
+Du kan kompilera `samp-injector.exe` från källkoden. Om du inte vill kompilera kan du ladda ner förkompilerade versioner i avsnittet [Releases](https://github.com/aldergrounds/samp-injector/releases).
 
 #### Krav
 
 - **Visual Studio:** Rekommenderas **Visual Studio 2022** eller senare med arbetsbelastningen **"Utveckling för skrivbordsapplikationer med C++"** installerad.
-- **Git:** För att klona repositoriet (eller ladda ner det direkt via denna länk: [Ladda ner](https://github.com/spc-samp/samp-injector/archive/refs/heads/main.zip)).
+- **Git:** För att klona repositoriet (eller ladda ner det direkt via denna länk: [Ladda ner](https://github.com/aldergrounds/samp-injector/archive/refs/heads/main.zip)).
 
 #### Kompileringssteg
 
 1. **Klona repositoriet:**
    ```bash
-   git clone https://github.com/spc-samp/samp-injector.git
+   git clone https://github.com/aldergrounds/samp-injector.git
    cd samp-injector
    ```
 2. **Öppna lösningen:**
@@ -297,9 +297,9 @@ public class Launcher {
 
 ### Användning av C++-biblioteket i **DLL**
 
-Liksom det exekverbara programmet är även `samp-injector.dll` byggd på biblioteket [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp), som finns i katalogen `libraries/cpp/`. Den exporterade funktionen `Launch_Game` fungerar som en wrapper, validerar parametrarna och delegerar den huvudsakliga injektionslogiken till funktionen `Initialize_Game` i biblioteket.
+Liksom det exekverbara programmet är även `samp-injector.dll` byggd på biblioteket [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp), som finns i katalogen `libraries/cpp/`. Den exporterade funktionen `Launch_Game` fungerar som en wrapper, validerar parametrarna och delegerar den huvudsakliga injektionslogiken till funktionen `Initialize_Game` i biblioteket.
 
-Den huvudsakliga header-filen för **C++**-biblioteket som ska inkluderas är `libraries/samp-injector/cpp/injector.hpp`. Eftersom biblioteket [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) är **header-only**, kräver dess användning endast inkludering av denna header i källkoden, utan behov av att länka en `.lib`-fil.
+Den huvudsakliga header-filen för **C++**-biblioteket som ska inkluderas är `libraries/samp-injector/cpp/injector.hpp`. Eftersom biblioteket [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) är **header-only**, kräver dess användning endast inkludering av denna header i källkoden, utan behov av att länka en `.lib`-fil.
 
 Följande kodsnutt från `main.cpp` i **DLL** visar hur uppgiften delegeras till en separat tråd:
 ```cpp
@@ -320,18 +320,18 @@ Detta visar att **DLL**:en i grunden är ett API-gränssnitt för samma kärnfun
 
 ### Hur man kompilerar
 
-Du kan kompilera `samp-injector.dll` från källkoden. Om du inte vill kompilera kan du ladda ner förkompilerade versioner från sektionen [Releases](https://github.com/spc-samp/samp-injector/releases).
+Du kan kompilera `samp-injector.dll` från källkoden. Om du inte vill kompilera kan du ladda ner förkompilerade versioner från sektionen [Releases](https://github.com/aldergrounds/samp-injector/releases).
 
 #### Krav
 
 - **Visual Studio:** **Visual Studio 2022** eller senare med arbetsbelastningen **"Skrivbordsutveckling med C++"** installerad rekommenderas.
-- **Git:** För att klona repositoriet (eller ladda ner det enkelt via denna länk: [Ladda ner](https://github.com/spc-samp/samp-injector/archive/refs/heads/main.zip)).
+- **Git:** För att klona repositoriet (eller ladda ner det enkelt via denna länk: [Ladda ner](https://github.com/aldergrounds/samp-injector/archive/refs/heads/main.zip)).
 
 #### Kompileringssteg
 
 1. **Klona Repositoriet:**
    ```bash
-   git clone https://github.com/spc-samp/samp-injector.git
+   git clone https://github.com/aldergrounds/samp-injector.git
    cd samp-injector
    ```
 2. **Öppna Lösningen:**
@@ -367,11 +367,11 @@ Projektet bygger på bibliotek som kapslar in de kritiska funktionerna. Detta g�
 | PowerShell | **SA-MP Injector PS**  | [Kolla biblioteket](../../libraries/powershell) |
 
 > [!WARNING]
-> **PowerShell**-biblioteket har avvecklats och kommer inte längre att få uppdateringar eller underhåll. Detta beror på att **GitHubs filter** anser att biblioteket innehåller potentiellt **skadligt** beteende, eftersom det utför **lågnivå**-operationer. När detta händer kan både **författarens** konto och **SPC**-profilen bli **avstängda** och **flaggade**. Men **oroa dig inte**: **PowerShell**-biblioteket kommer fortfarande att vara tillgängligt för användning, det kommer bara **inte att få nya uppdateringar**.
+> **PowerShell**-biblioteket har avvecklats och kommer inte längre att få uppdateringar eller underhåll. Detta beror på att **GitHubs filter** anser att biblioteket innehåller potentiellt **skadligt** beteende, eftersom det utför **lågnivå**-operationer. När detta händer kan både **författarens** konto och **AlderGrounds**-profilen bli **avstängda** och **flaggade**. Men **oroa dig inte**: **PowerShell**-biblioteket kommer fortfarande att vara tillgängligt för användning, det kommer bara **inte att få nya uppdateringar**.
 
 ## Licens
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Denna programvara är licensierad under villkoren i MIT-licensen ("Licensen"); du får använda denna programvara i enlighet med Licensens villkor. En kopia av Licensen kan erhållas på: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -392,7 +392,7 @@ Alla kopior eller väsentliga delar av programvaran måste innehålla:
 
 #### 3. Upphovsrätt
 
-Programvaran och all tillhörande dokumentation skyddas av upphovsrättslagar. **SA-MP Programming Community** behåller den ursprungliga upphovsrätten till programvaran.
+Programvaran och all tillhörande dokumentation skyddas av upphovsrättslagar. **AlderGrounds** behåller den ursprungliga upphovsrätten till programvaran.
 
 #### 4. Garantifriskrivning och ansvarsbegränsning
 

@@ -1,8 +1,8 @@
 # SA-MP Injector
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![SA-MP | OMP](https://img.shields.io/badge/Support-SA--MP%20%7C%20OMP-yellow)](https://github.com/spc-samp/samp-injector)
-[![x86 Only](https://img.shields.io/badge/Architecture-x86%20(32--bit)-orange)](https://github.com/spc-samp/samp-injector)
+[![SA-MP | OMP](https://img.shields.io/badge/Support-SA--MP%20%7C%20OMP-yellow)](https://github.com/aldergrounds/samp-injector)
+[![x86 Only](https://img.shields.io/badge/Architecture-x86%20(32--bit)-orange)](https://github.com/aldergrounds/samp-injector)
 
 **SA-MP Injector** is a versatile tool designed for **SA-MP (San Andreas Multiplayer)** and **OMP (Open Multiplayer)**, functioning as a **command-line executable**, a **dynamic library (DLL)**, and a **set of libraries for different programming languages**. Its main function is to inject the `samp.dll` (in the case of **SA-MP**) or both `samp.dll` and `omp-client.dll` (in the case of **OMP**) into the **GTA:SA** process, allowing the game to be launched with customized parameters, enabling direct connection to a server.
 
@@ -154,9 +154,9 @@ public class Launcher {
 
 ### Using the C++ Library in the Executable
 
-The `samp-injector.exe` executable is built on top of the [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) library, located in the `libraries/cpp/` directory. The `main.cpp` file of the executable invokes the functionalities of this library to perform the injection and game launch.
+The `samp-injector.exe` executable is built on top of the [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) library, located in the `libraries/cpp/` directory. The `main.cpp` file of the executable invokes the functionalities of this library to perform the injection and game launch.
 
-The main header file of the **C++** library to be included is `libraries/samp-injector/cpp/injector.hpp`. As the [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) library is **header-only**, its usage requires only including this header in the source code, without the need to link a `.lib` file.
+The main header file of the **C++** library to be included is `libraries/samp-injector/cpp/injector.hpp`. As the [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) library is **header-only**, its usage requires only including this header in the source code, without the need to link a `.lib` file.
 
 The relevant section of `main.cpp` demonstrating the integration is as follows:
 ```cpp
@@ -185,18 +185,18 @@ The `Initialize_Game` function acts as the high-level interface of the library, 
 
 ### How to Compile
 
-You can compile the `samp-injector.exe` from the source code. If you do not wish to compile, you can download precompiled versions from the [Releases](https://github.com/spc-samp/samp-injector/releases) section.
+You can compile the `samp-injector.exe` from the source code. If you do not wish to compile, you can download precompiled versions from the [Releases](https://github.com/aldergrounds/samp-injector/releases) section.
 
 #### Requirements
 
 - **Visual Studio:** **Visual Studio 2022** or higher with the **"Desktop development with C++" workload** installed is recommended.
-- **Git:** To clone the repository (or simply download it using this link: [Download](https://github.com/spc-samp/samp-injector/archive/refs/heads/main.zip)).
+- **Git:** To clone the repository (or simply download it using this link: [Download](https://github.com/aldergrounds/samp-injector/archive/refs/heads/main.zip)).
 
 #### Compilation Steps
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/spc-samp/samp-injector.git
+   git clone https://github.com/aldergrounds/samp-injector.git
    cd samp-injector
    ```
 2. **Open the Solution:**
@@ -297,9 +297,9 @@ public class Launcher {
 
 ### Using the C++ Library in the **DLL**
 
-Like the executable, the `samp-injector.dll` is also built on the [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) library, located in the `libraries/cpp/` directory. The exported `Launch_Game` function acts as a wrapper, validating parameters and delegating the main injection logic to the `Initialize_Game` function of the library.
+Like the executable, the `samp-injector.dll` is also built on the [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) library, located in the `libraries/cpp/` directory. The exported `Launch_Game` function acts as a wrapper, validating parameters and delegating the main injection logic to the `Initialize_Game` function of the library.
 
-The main header file of the **C++** library to include is `libraries/samp-injector/cpp/injector.hpp`. Since the [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) library is **header-only**, its use requires only including this header in the source code, without needing to link a `.lib` file.
+The main header file of the **C++** library to include is `libraries/samp-injector/cpp/injector.hpp`. Since the [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) library is **header-only**, its use requires only including this header in the source code, without needing to link a `.lib` file.
 
 The following code snippet from the `main.cpp` of the **DLL** demonstrates how the task is delegated to a separate thread:
 ```cpp
@@ -320,18 +320,18 @@ This shows that the **DLL** is essentially an API interface for the same core fu
 
 ### How to Compile
 
-You can compile the `samp-injector.dll` from the source code. If you do not wish to compile, you can download pre-compiled versions from the [Releases](https://github.com/spc-samp/samp-injector/releases) section.
+You can compile the `samp-injector.dll` from the source code. If you do not wish to compile, you can download pre-compiled versions from the [Releases](https://github.com/aldergrounds/samp-injector/releases) section.
 
 #### Requirements
 
 - **Visual Studio:** **Visual Studio 2022** or higher with the **"Desktop development with C++"** workload installed is recommended.
-- **Git:** To clone the repository (or simply download it via this link: [Download](https://github.com/spc-samp/samp-injector/archive/refs/heads/main.zip)).
+- **Git:** To clone the repository (or simply download it via this link: [Download](https://github.com/aldergrounds/samp-injector/archive/refs/heads/main.zip)).
 
 #### Compilation Steps
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/spc-samp/samp-injector.git
+   git clone https://github.com/aldergrounds/samp-injector.git
    cd samp-injector
    ```
 2. **Open the Solution:**
@@ -367,11 +367,11 @@ The project is built on libraries that encapsulate the critical functionalities.
 | PowerShell | **SA-MP Injector PS**  | [View Library](../../libraries/powershell) |
 
 > [!WARNING]
-> The **PowerShell** library has been discontinued and will no longer receive updates or maintenance. This happened because **GitHub’s filters** consider the library to contain potentially **malicious** behavior, as it performs **low-level** operations. When this occurs, both the **author’s** account and the **SPC** profile may be **suspended** and **flagged**. However, **don’t worry**: the **PowerShell** library will remain available for use, it just **won’t receive new updates**.
+> The **PowerShell** library has been discontinued and will no longer receive updates or maintenance. This happened because **GitHub’s filters** consider the library to contain potentially **malicious** behavior, as it performs **low-level** operations. When this occurs, both the **author’s** account and the **AlderGrounds** profile may be **suspended** and **flagged**. However, **don’t worry**: the **PowerShell** library will remain available for use, it just **won’t receive new updates**.
 
 ## License
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 This software is licensed under the terms of the MIT License ("License"); you may use this software according to the License terms. A copy of the License can be obtained at: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -392,7 +392,7 @@ All copies or substantial portions of the software must include:
 
 #### 3. Copyright
 
-The software and all associated documentation are protected by copyright laws. The **SA-MP Programming Community** retains the original copyright of the software.
+The software and all associated documentation are protected by copyright laws. The **AlderGrounds** retains the original copyright of the software.
 
 #### 4. Disclaimer of Warranty and Limitation of Liability
 

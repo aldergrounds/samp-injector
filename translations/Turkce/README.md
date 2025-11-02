@@ -1,8 +1,8 @@
 # SA-MP Injector
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![SA-MP | OMP](https://img.shields.io/badge/Support-SA--MP%20%7C%20OMP-yellow)](https://github.com/spc-samp/samp-injector)
-[![x86 Only](https://img.shields.io/badge/Architecture-x86%20(32--bit)-orange)](https://github.com/spc-samp/samp-injector)
+[![SA-MP | OMP](https://img.shields.io/badge/Support-SA--MP%20%7C%20OMP-yellow)](https://github.com/aldergrounds/samp-injector)
+[![x86 Only](https://img.shields.io/badge/Architecture-x86%20(32--bit)-orange)](https://github.com/aldergrounds/samp-injector)
 
 **SA-MP Injector**, **SA-MP (San Andreas Multiplayer)** ve **OMP (Open Multiplayer)** için tasarlanmış çok yönlü bir araçtır ve bir **komut satırı çalıştırılabilir dosyası**, bir **dinamik kütüphane (DLL)** ve farklı programlama dilleri için bir **kütüphane seti** olarak işlev görür. Ana işlevi, **GTA:SA** sürecine `samp.dll` (**SA-MP** durumunda) veya hem `samp.dll` hem de `omp-client.dll` (**OMP** durumunda) enjekte ederek oyunun özelleştirilmiş parametrelerle başlatılmasını sağlamaktır, bu da bir sunucuya doğrudan bağlantı kurmayı mümkün kılar.
 
@@ -154,9 +154,9 @@ public class Launcher {
 
 ### Çalıştırılabilir Dosyada C++ Kütüphanesinin Kullanımı
 
-Çalıştırılabilir dosya `samp-injector.exe`, `libraries/cpp/` dizininde bulunan [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) kütüphanesine dayanır. Çalıştırılabilir dosyanın `main.cpp` dosyası, enjeksiyon ve oyunun başlatılması için bu kütüphanenin işlevlerini kullanır.
+Çalıştırılabilir dosya `samp-injector.exe`, `libraries/cpp/` dizininde bulunan [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) kütüphanesine dayanır. Çalıştırılabilir dosyanın `main.cpp` dosyası, enjeksiyon ve oyunun başlatılması için bu kütüphanenin işlevlerini kullanır.
 
-**C++** kütüphanesinin dahil edilmesi gereken ana başlık dosyası `libraries/samp-injector/cpp/injector.hpp` dosyasıdır. [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) kütüphanesi **header-only** olduğundan, kullanımı yalnızca bu başlığın kaynak koda dahil edilmesini gerektirir ve `.lib` dosyasına bağlanma ihtiyacı yoktur.
+**C++** kütüphanesinin dahil edilmesi gereken ana başlık dosyası `libraries/samp-injector/cpp/injector.hpp` dosyasıdır. [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) kütüphanesi **header-only** olduğundan, kullanımı yalnızca bu başlığın kaynak koda dahil edilmesini gerektirir ve `.lib` dosyasına bağlanma ihtiyacı yoktur.
 
 `main.cpp` dosyasındaki entegrasyonu gösteren ilgili bölüm şöyledir:
 ```cpp
@@ -185,18 +185,18 @@ Sleep(10000); // Çalıştırılabilir dosyanın kapanmasından önce bekler
 
 ### Nasıl Derlenir
 
-`samp-injector.exe`'yi kaynak kodundan derleyebilirsiniz. Derlemek istemiyorsanız, [Releases](https://github.com/spc-samp/samp-injector/releases) bölümünden önceden derlenmiş sürümleri indirebilirsiniz.
+`samp-injector.exe`'yi kaynak kodundan derleyebilirsiniz. Derlemek istemiyorsanız, [Releases](https://github.com/aldergrounds/samp-injector/releases) bölümünden önceden derlenmiş sürümleri indirebilirsiniz.
 
 #### Gereksinimler
 
 - **Visual Studio:** **Visual Studio 2022** veya daha yeni bir sürüm ve **"C++ ile masaüstü geliştirme"** iş yükü yüklü olması önerilir.
-- **Git:** Depoyu klonlamak için (veya bu bağlantıya tıklayarak doğrudan indirin: [İndir](https://github.com/spc-samp/samp-injector/archive/refs/heads/main.zip)).
+- **Git:** Depoyu klonlamak için (veya bu bağlantıya tıklayarak doğrudan indirin: [İndir](https://github.com/aldergrounds/samp-injector/archive/refs/heads/main.zip)).
 
 #### Derleme Adımları
 
 1. **Depoyu klonlayın:**
    ```bash
-   git clone https://github.com/spc-samp/samp-injector.git
+   git clone https://github.com/aldergrounds/samp-injector.git
    cd samp-injector
    ```
 2. **Çözümü açın:**
@@ -297,9 +297,9 @@ public class Launcher {
 
 ### **DLL** İçinde C++ Kütüphanesinin Kullanımı
 
-Çalıştırılabilir dosya gibi, `samp-injector.dll` de `libraries/cpp/` dizininde bulunan [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) kütüphanesine dayanır. Dışa aktarılmış `Launch_Game` fonksiyonu bir sarmalayıcı (wrapper) olarak işlev görür, parametreleri doğrular ve ana enjeksiyon mantığını kütüphanenin `Initialize_Game` fonksiyonuna devreder.
+Çalıştırılabilir dosya gibi, `samp-injector.dll` de `libraries/cpp/` dizininde bulunan [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) kütüphanesine dayanır. Dışa aktarılmış `Launch_Game` fonksiyonu bir sarmalayıcı (wrapper) olarak işlev görür, parametreleri doğrular ve ana enjeksiyon mantığını kütüphanenin `Initialize_Game` fonksiyonuna devreder.
 
-**C++** kütüphanesinin dahil edilmesi gereken ana başlık dosyası `libraries/samp-injector/cpp/injector.hpp` dosyasıdır. [SA-MP Injector C++](https://github.com/spc-samp/samp-injector/tree/main/libraries/cpp) kütüphanesi **header-only** olduğu için, kullanımı yalnızca bu başlığın kaynak koda dahil edilmesini gerektirir ve bir `.lib` dosyasına bağlanma ihtiyacı yoktur.
+**C++** kütüphanesinin dahil edilmesi gereken ana başlık dosyası `libraries/samp-injector/cpp/injector.hpp` dosyasıdır. [SA-MP Injector C++](https://github.com/aldergrounds/samp-injector/tree/main/libraries/cpp) kütüphanesi **header-only** olduğu için, kullanımı yalnızca bu başlığın kaynak koda dahil edilmesini gerektirir ve bir `.lib` dosyasına bağlanma ihtiyacı yoktur.
 
 Aşağıdaki kod parçası, **DLL**'nin `main.cpp` dosyasından, görevin ayrı bir iş parçacığında nasıl devredildiğini gösterir:
 ```cpp
@@ -320,18 +320,18 @@ Bu, **DLL**'nin temel olarak çalıştırılabilir dosya tarafından kullanılan
 
 ### Nasıl Derlenir
 
-`samp-injector.dll` dosyasını kaynak koddan derleyebilirsiniz. Derlemek istemiyorsanız, [Releases](https://github.com/spc-samp/samp-injector/releases) bölümünden önceden derlenmiş sürümleri indirebilirsiniz.
+`samp-injector.dll` dosyasını kaynak koddan derleyebilirsiniz. Derlemek istemiyorsanız, [Releases](https://github.com/aldergrounds/samp-injector/releases) bölümünden önceden derlenmiş sürümleri indirebilirsiniz.
 
 #### Gereksinimler
 
 - **Visual Studio:** **Visual Studio 2022** veya daha üstü, **"C++ ile Masaüstü Geliştirme"** iş yükü yüklü olarak önerilir.
-- **Git:** Depoyu klonlamak için (veya bu bağlantıdan basitçe indirin: [İndir](https://github.com/spc-samp/samp-injector/archive/refs/heads/main.zip)).
+- **Git:** Depoyu klonlamak için (veya bu bağlantıdan basitçe indirin: [İndir](https://github.com/aldergrounds/samp-injector/archive/refs/heads/main.zip)).
 
 #### Derleme Adımları
 
 1. **Depoyu Klonlayın:**
    ```bash
-   git clone https://github.com/spc-samp/samp-injector.git
+   git clone https://github.com/aldergrounds/samp-injector.git
    cd samp-injector
    ```
 2. **Çözümü Açın:**
@@ -367,11 +367,11 @@ Proje, kritik işlevleri kapsülleyen kütüphanelere dayanır. Bu, diğer proje
 | PowerShell | **SA-MP Injector PS**  | [Kütüphaneyi İncele](../../libraries/powershell) |
 
 > [!WARNING]
-> **PowerShell** kütüphanesi kullanımdan kaldırılmıştır ve artık güncelleme veya bakım almayacaktır. Bunun nedeni, **GitHub**’ın **filtrelerinin**, kütüphaneyi **düşük seviye** işlemler gerçekleştirdiği için potansiyel olarak **zararlı** olarak değerlendirmesidir. Bu durumda hem **yazarın** hesabı hem de **SPC** profili **askıya alınabilir** ve **işaretlenebilir**. Ancak, **endişelenmeyin**: **PowerShell** kütüphanesi kullanılmaya devam edecektir, yalnızca **yeni güncellemeler almayacaktır**.
+> **PowerShell** kütüphanesi kullanımdan kaldırılmıştır ve artık güncelleme veya bakım almayacaktır. Bunun nedeni, **GitHub**’ın **filtrelerinin**, kütüphaneyi **düşük seviye** işlemler gerçekleştirdiği için potansiyel olarak **zararlı** olarak değerlendirmesidir. Bu durumda hem **yazarın** hesabı hem de **AlderGrounds** profili **askıya alınabilir** ve **işaretlenebilir**. Ancak, **endişelenmeyin**: **PowerShell** kütüphanesi kullanılmaya devam edecektir, yalnızca **yeni güncellemeler almayacaktır**.
 
 ## Lisans
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Bu yazılım MIT Lisansı ("Lisans") şartları altında lisanslanmıştır; bu yazılımı Lisans şartlarına uygun olarak kullanabilirsiniz. Lisansın bir kopyasını şu adresten edinebilirsiniz: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -392,7 +392,7 @@ Yazılımın tüm kopyaları veya önemli parçaları şunları içermelidir:
 
 #### 3. Telif Hakları
 
-Yazılım ve ilgili tüm dokümantasyon telif hakkı yasaları ile korunmaktadır. **SA-MP Programming Community** yazılımın orijinal telif haklarını elinde tutmaktadır.
+Yazılım ve ilgili tüm dokümantasyon telif hakkı yasaları ile korunmaktadır. **AlderGrounds** yazılımın orijinal telif haklarını elinde tutmaktadır.
 
 #### 4. Garanti Reddi ve Sorumluluk Sınırlaması
 
