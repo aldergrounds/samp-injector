@@ -33,7 +33,7 @@
 #include <thread>
 #include <exception>
 //
-#include "libraries/samp-injector/cpp/injector.hpp" 
+#include "../libraries/cpp/injector.hpp"
 
 #define SAMP_INJECTOR_DLL_API extern "C" __declspec(dllexport)
 

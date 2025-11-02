@@ -34,7 +34,7 @@
 #include <string>
 #include <memory>
 //
-#include "libraries/samp-injector/cpp/injector.hpp"
+#include "../libraries/cpp/injector.hpp"
 
 namespace {
     void Show_Usage() {
