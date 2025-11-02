@@ -3,11 +3,12 @@
  * library for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer)        *
  * ============================================================================= *
  *                                                                               *
- * Copyright (c) 2025, SPC (SA-MP Programming Community)                         *
+ * Copyright (c) 2025, AlderGrounds                                              *
  * All rights reserved.                                                          *
  *                                                                               *
  * Developed by: Calasans                                                        *
- * Repository: https://github.com/spc-samp/samp-injector                         *
+ * Provided by: AlderGrounds                                                     *
+ * Repository: https://github.com/aldergrounds/samp-injector                     *
  *                                                                               *
  * ============================================================================= *
  *                                                                               *
@@ -55,8 +56,8 @@ internal static class Constants {
     public const int CMD_ARG_PASSWORD_LENGTH = 4;
 
     // Error message titles
-    public const string ERROR_TITLE_SAMP = "SA-MP Injector Error - SPC";
-    public const string ERROR_TITLE_OMP = "OMP Injector Error - SPC";
+    public const string ERROR_TITLE_SAMP = "SA-MP Injector Error";
+    public const string ERROR_TITLE_OMP = "OMP Injector Error";
 
     // Process creation flags
     public const uint CREATE_SUSPENDED = 0x00000004;

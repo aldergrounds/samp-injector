@@ -210,8 +210,8 @@ Sabitlerin kategoriye göre düzenlenmesi, amaçlarının anlaşılmasını kola
    - `CMD_ARG_PASSWORD_LENGTH`: Şifre argümanı önekinin uzunluğu (4 karakter).
 
 - **Error Message Titles**
-   - `ERROR_TITLE_SAMP`: SA-MP hatalarıyla ilgili hata iletişim kutuları için varsayılan başlık (`"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: OMP hatalarıyla ilgili hata iletişim kutuları için varsayılan başlık (`"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: SA-MP hatalarıyla ilgili hata iletişim kutuları için varsayılan başlık (`"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: OMP hatalarıyla ilgili hata iletişim kutuları için varsayılan başlık (`"OMP Injector Error"`).
 
 - **Process Creation Flags**
    - `CREATE_SUSPENDED`: İşletim sistemine bir süreci ve ana thread'ini askıya alınmış bir durumda oluşturmasını bildiren bayrak (`0x00000004`). Bu, oyun çalışmaya başlamadan önce DLL'in enjekte edilmesi için temel bir özelliktir.
@@ -539,7 +539,7 @@ Bu, enjeksiyon döngüsündeki olası son hatadır.
 
 ## Lisans
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Bu yazılım MIT Lisansı ("Lisans") şartları altında lisanslanmıştır; bu yazılımı Lisans şartlarına uygun olarak kullanabilirsiniz. Lisansın bir kopyasını şu adresten edinebilirsiniz: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -560,7 +560,7 @@ Yazılımın tüm kopyaları veya önemli parçaları şunları içermelidir:
 
 #### 3. Telif Hakları
 
-Yazılım ve ilgili tüm dokümantasyon telif hakkı yasaları ile korunmaktadır. **SA-MP Programming Community** yazılımın orijinal telif haklarını elinde tutmaktadır.
+Yazılım ve ilgili tüm dokümantasyon telif hakkı yasaları ile korunmaktadır. **AlderGrounds** yazılımın orijinal telif haklarını elinde tutmaktadır.
 
 #### 4. Garanti Reddi ve Sorumluluk Sınırlaması
 

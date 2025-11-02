@@ -219,8 +219,8 @@ Die Organisation der Konstanten nach Kategorien erleichtert das Verständnis ihr
    - `INJECT_TYPE_OMP`: Ein `const wchar_t*` für die String-Repräsentation des OMP-Injektionstyps (Wert: `L"omp"`).
 
 - **Titel für Fehlermeldungen (`Error message titles`)**
-   - `ERROR_TITLE_SAMP`: Ein `const wchar_t*`, der den Standardtitel für Fehlerdialogfelder im Zusammenhang mit SA-MP-Fehlern definiert (Wert: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Ein `const wchar_t*`, der den Standardtitel für Fehlerdialogfelder im Zusammenhang mit OMP-Fehlern definiert (Wert: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Ein `const wchar_t*`, der den Standardtitel für Fehlerdialogfelder im Zusammenhang mit SA-MP-Fehlern definiert (Wert: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Ein `const wchar_t*`, der den Standardtitel für Fehlerdialogfelder im Zusammenhang mit OMP-Fehlern definiert (Wert: `L"OMP Injector Error"`).
 
 - **Flags zur Prozesserstellung (`Process creation`)**
    - `PROCESS_CREATION_FLAGS`: Ein `DWORD`, das die Flags kapselt, die an `CreateProcessW` übergeben werden. Entscheidend ist, dass es `CREATE_SUSPENDED` (`0x00000004`) enthält, das den Spielprozess in einem angehaltenen Zustand startet, und `DETACHED_PROCESS` (`0x00000008`), das den neuen Prozess von der Konsole des übergeordneten Prozesses entkoppelt.
@@ -758,7 +758,7 @@ Dies ist der letzte mögliche Fehlerpunkt im Injektionszyklus.
 
 ## Lizenz
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Diese Software ist unter den Bedingungen der MIT-Lizenz ("Lizenz") lizenziert; Sie dürfen diese Software gemäß den Lizenzbedingungen nutzen. Eine Kopie der Lizenz finden Sie unter: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ Alle Kopien oder wesentliche Teile der Software müssen enthalten:
 
 #### 3. Urheberrecht
 
-Die Software und alle zugehörige Dokumentation sind durch Urheberrechtsgesetze geschützt. Die **SA-MP Programming Community** behält die ursprünglichen Urheberrechte an der Software.
+Die Software und alle zugehörige Dokumentation sind durch Urheberrechtsgesetze geschützt. Die **AlderGrounds** behält die ursprünglichen Urheberrechte an der Software.
 
 #### 4. Gewährleistungsausschluss und Haftungsbeschränkung
 

@@ -3,11 +3,12 @@
  * library for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer)        *
  * ============================================================================= *
  *                                                                               *
- * Copyright (c) 2025, SPC (SA-MP Programming Community)                         *
+ * Copyright (c) 2025, AlderGrounds                                              *
  * All rights reserved.                                                          *
  *                                                                               *
  * Developed by: Calasans                                                        *
- * Repository: https://github.com/spc-samp/samp-injector                         *
+ * Provided by: AlderGrounds                                                     *
+ * Repository: https://github.com/aldergrounds/samp-injector                     *
  *                                                                               *
  * ============================================================================= *
  *                                                                               *

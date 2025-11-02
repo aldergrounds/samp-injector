@@ -210,8 +210,8 @@ Organizacja stałych według kategorii ułatwia zrozumienie ich celu:
    - `CMD_ARG_PASSWORD_LENGTH`: Długość prefiksu argumentu hasła (4 znaki).
 
 - **Error Message Titles**
-   - `ERROR_TITLE_SAMP`: Domyślny tytuł dla okien dialogowych błędów związanych z awariami SA-MP (`"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Domyślny tytuł dla okien dialogowych błędów związanych z awariami OMP (`"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Domyślny tytuł dla okien dialogowych błędów związanych z awariami SA-MP (`"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Domyślny tytuł dla okien dialogowych błędów związanych z awariami OMP (`"OMP Injector Error"`).
 
 - **Process Creation Flags**
    - `CREATE_SUSPENDED`: Flaga, która instruuje system operacyjny, aby utworzył proces i jego główny wątek w stanie wstrzymanym (`0x00000004`). Jest to kluczowe dla wstrzyknięcia DLL, zanim gra zacznie się wykonywać.
@@ -539,7 +539,7 @@ Jest to ostatni możliwy błąd w cyklu wstrzykiwania.
 
 ## Licencja
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 To oprogramowanie jest licencjonowane na warunkach licencji MIT ("Licencja"); możesz korzystać z tego oprogramowania zgodnie z warunkami Licencji. Kopię Licencji można uzyskać pod adresem: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -560,7 +560,7 @@ Wszystkie kopie lub istotne części oprogramowania muszą zawierać:
 
 #### 3. Prawa autorskie
 
-Oprogramowanie i cała powiązana dokumentacja są chronione prawami autorskimi. **SA-MP Programming Community** zachowuje oryginalne prawa autorskie do oprogramowania.
+Oprogramowanie i cała powiązana dokumentacja są chronione prawami autorskimi. **AlderGrounds** zachowuje oryginalne prawa autorskie do oprogramowania.
 
 #### 4. Wyłączenie gwarancji i ograniczenie odpowiedzialności
 

@@ -219,8 +219,8 @@ La organización de las constantes por categoría facilita la comprensión de su
    - `INJECT_TYPE_OMP`: Un `const wchar_t*` para la representación en cadena del tipo de inyección OMP (valor: `L"omp"`).
 
 - **Títulos para Mensajes de Error (`Error message titles`)**
-   - `ERROR_TITLE_SAMP`: Un `const wchar_t*` que define el título predeterminado para los cuadros de diálogo de error relacionados con fallos de SA-MP (valor: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Un `const wchar_t*` que define el título predeterminado para los cuadros de diálogo de error relacionados con fallos de OMP (valor: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Un `const wchar_t*` que define el título predeterminado para los cuadros de diálogo de error relacionados con fallos de SA-MP (valor: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Un `const wchar_t*` que define el título predeterminado para los cuadros de diálogo de error relacionados con fallos de OMP (valor: `L"OMP Injector Error"`).
 
 - **Flags de Creación de Proceso (`Process creation`)**
    - `PROCESS_CREATION_FLAGS`: Un `DWORD` que encapsula las banderas pasadas a `CreateProcessW`. Crucialmente, incluye `CREATE_SUSPENDED` (`0x00000004`), que inicia el proceso del juego en un estado pausado, y `DETACHED_PROCESS` (`0x00000008`), que desvincula el nuevo proceso de la consola del proceso padre.
@@ -758,7 +758,7 @@ Este es el último punto de fallo posible en el ciclo de inyección.
 
 ## Licencia
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Este software está licenciado bajo los términos de la Licencia MIT ("Licencia"); puede utilizar este software de acuerdo con las condiciones de la Licencia. Puede obtener una copia de la Licencia en: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ Todas las copias o partes sustanciales del software deben incluir:
 
 #### 3. Derechos de Autor
 
-El software y toda la documentación asociada están protegidos por leyes de derechos de autor. La **SA-MP Programming Community** mantiene la titularidad de los derechos de autor originales del software.
+El software y toda la documentación asociada están protegidos por leyes de derechos de autor. La **AlderGrounds** mantiene la titularidad de los derechos de autor originales del software.
 
 #### 4. Exención de Garantías y Limitación de Responsabilidad
 

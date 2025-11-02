@@ -219,8 +219,8 @@ Organizacja stałych według kategorii ułatwia zrozumienie ich przeznaczenia:
    - `INJECT_TYPE_OMP`: `const wchar_t*` dla reprezentacji w postaci ciągu znaków typu wstrzyknięcia OMP (wartość: `L"omp"`).
 
 - **Tytuły komunikatów o błędach (`Error message titles`)**
-   - `ERROR_TITLE_SAMP`: `const wchar_t*`, który definiuje domyślny tytuł dla okien dialogowych błędów związanych z awariami SA-MP (wartość: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: `const wchar_t*`, który definiuje domyślny tytuł dla okien dialogowych błędów związanych z awariami OMP (wartość: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: `const wchar_t*`, który definiuje domyślny tytuł dla okien dialogowych błędów związanych z awariami SA-MP (wartość: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: `const wchar_t*`, który definiuje domyślny tytuł dla okien dialogowych błędów związanych z awariami OMP (wartość: `L"OMP Injector Error"`).
 
 - **Flagi tworzenia procesu (`Process creation`)**
    - `PROCESS_CREATION_FLAGS`: `DWORD`, który hermetyzuje flagi przekazywane do `CreateProcessW`. Co najważniejsze, zawiera `CREATE_SUSPENDED` (`0x00000004`), który uruchamia proces gry w stanie wstrzymanym, oraz `DETACHED_PROCESS` (`0x00000008`), który odłącza nowy proces od konsoli procesu nadrzędnego.
@@ -758,7 +758,7 @@ Jest to ostatni możliwy punkt awarii w cyklu wstrzykiwania.
 
 ## Licencja
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 To oprogramowanie jest licencjonowane na warunkach licencji MIT ("Licencja"); możesz korzystać z tego oprogramowania zgodnie z warunkami Licencji. Kopię Licencji można uzyskać pod adresem: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ Wszystkie kopie lub istotne części oprogramowania muszą zawierać:
 
 #### 3. Prawa autorskie
 
-Oprogramowanie i cała powiązana dokumentacja są chronione prawami autorskimi. **SA-MP Programming Community** zachowuje oryginalne prawa autorskie do oprogramowania.
+Oprogramowanie i cała powiązana dokumentacja są chronione prawami autorskimi. **AlderGrounds** zachowuje oryginalne prawa autorskie do oprogramowania.
 
 #### 4. Wyłączenie gwarancji i ograniczenie odpowiedzialności
 

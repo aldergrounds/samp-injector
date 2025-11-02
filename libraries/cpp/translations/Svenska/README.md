@@ -219,8 +219,8 @@ Organisationen av konstanterna efter kategori gör det lättare att förstå der
    - `INJECT_TYPE_OMP`: En `const wchar_t*` för strängrepresentationen av OMP-injektionstypen (värde: `L"omp"`).
 
 - **Titlar för Felmeddelanden (`Error message titles`)**
-   - `ERROR_TITLE_SAMP`: En `const wchar_t*` som definierar standardtiteln för felmeddelanderutor relaterade till SA-MP-fel (värde: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: En `const wchar_t*` som definierar standardtiteln för felmeddelanderutor relaterade till OMP-fel (värde: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: En `const wchar_t*` som definierar standardtiteln för felmeddelanderutor relaterade till SA-MP-fel (värde: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: En `const wchar_t*` som definierar standardtiteln för felmeddelanderutor relaterade till OMP-fel (värde: `L"OMP Injector Error"`).
 
 - **Flaggor för Processkapande (`Process creation`)**
    - `PROCESS_CREATION_FLAGS`: En `DWORD` som inkapslar flaggorna som skickas till `CreateProcessW`. Avgörande är att den inkluderar `CREATE_SUSPENDED` (`0x00000004`), som startar spelprocessen i ett pausat tillstånd, och `DETACHED_PROCESS` (`0x00000008`), som kopplar bort den nya processen från föräldraprocessens konsol.
@@ -758,7 +758,7 @@ Detta är den sista möjliga felpunkten i injektionscykeln.
 
 ## Licens
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Denna programvara är licensierad under villkoren i MIT-licensen ("Licensen"); du får använda denna programvara i enlighet med Licensens villkor. En kopia av Licensen kan erhållas på: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ Alla kopior eller väsentliga delar av programvaran måste innehålla:
 
 #### 3. Upphovsrätt
 
-Programvaran och all tillhörande dokumentation skyddas av upphovsrättslagar. **SA-MP Programming Community** behåller den ursprungliga upphovsrätten till programvaran.
+Programvaran och all tillhörande dokumentation skyddas av upphovsrättslagar. **AlderGrounds** behåller den ursprungliga upphovsrätten till programvaran.
 
 #### 4. Garantifriskrivning och ansvarsbegränsning
 

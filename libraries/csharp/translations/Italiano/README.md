@@ -210,8 +210,8 @@ L'organizzazione delle costanti per categoria facilita la comprensione del loro 
    - `CMD_ARG_PASSWORD_LENGTH`: La lunghezza del prefisso dell'argomento della password (4 caratteri).
 
 - **Error Message Titles**
-   - `ERROR_TITLE_SAMP`: Titolo predefinito per le finestre di dialogo di errore relative a fallimenti di SA-MP (`"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Titolo predefinito per le finestre di dialogo di errore relative a fallimenti di OMP (`"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Titolo predefinito per le finestre di dialogo di errore relative a fallimenti di SA-MP (`"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Titolo predefinito per le finestre di dialogo di errore relative a fallimenti di OMP (`"OMP Injector Error"`).
 
 - **Process Creation Flags**
    - `CREATE_SUSPENDED`: Flag che istruisce il sistema operativo a creare un processo e il suo thread principale in uno stato sospeso (`0x00000004`). Questo è fondamentale per l'iniezione della DLL prima che il gioco inizi a essere eseguito.
@@ -539,7 +539,7 @@ Questo è l'ultimo errore possibile nel ciclo di iniezione.
 
 ## Licenza
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Questo software è concesso in licenza secondo i termini della Licenza MIT ("Licenza"); è possibile utilizzare questo software in conformità con le condizioni della Licenza. Una copia della Licenza può essere ottenuta su: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -560,7 +560,7 @@ Tutte le copie o parti sostanziali del software devono includere:
 
 #### 3. Diritti d'Autore
 
-Il software e tutta la documentazione associata sono protetti dalle leggi sul diritto d'autore. La **SA-MP Programming Community** mantiene la titolarità dei diritti d'autore originali del software.
+Il software e tutta la documentazione associata sono protetti dalle leggi sul diritto d'autore. La **AlderGrounds** mantiene la titolarità dei diritti d'autore originali del software.
 
 #### 4. Esclusione di Garanzia e Limitazione di Responsabilità
 

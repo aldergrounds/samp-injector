@@ -219,8 +219,8 @@ The organization of constants by category makes their purpose easier to understa
    - `INJECT_TYPE_OMP`: A `const wchar_t*` for the string representation of the OMP injection type (value: `L"omp"`).
 
 - **Error message titles**
-   - `ERROR_TITLE_SAMP`: A `const wchar_t*` that defines the default title for error dialog boxes related to SA-MP failures (value: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: A `const wchar_t*` that defines the default title for error dialog boxes related to OMP failures (value: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: A `const wchar_t*` that defines the default title for error dialog boxes related to SA-MP failures (value: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: A `const wchar_t*` that defines the default title for error dialog boxes related to OMP failures (value: `L"OMP Injector Error"`).
 
 - **Process creation flags**
    - `PROCESS_CREATION_FLAGS`: A `DWORD` that encapsulates the flags passed to `CreateProcessW`. Crucially, it includes `CREATE_SUSPENDED` (`0x00000004`), which starts the game process in a paused state, and `DETACHED_PROCESS` (`0x00000008`), which detaches the new process from the parent process's console.
@@ -758,7 +758,7 @@ This is the last possible point of failure in the injection cycle.
 
 ## License
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 This software is licensed under the terms of the MIT License ("License"); you may use this software according to the License terms. A copy of the License can be obtained at: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ All copies or substantial portions of the software must include:
 
 #### 3. Copyright
 
-The software and all associated documentation are protected by copyright laws. The **SA-MP Programming Community** retains the original copyright of the software.
+The software and all associated documentation are protected by copyright laws. The **AlderGrounds** retains the original copyright of the software.
 
 #### 4. Disclaimer of Warranty and Limitation of Liability
 

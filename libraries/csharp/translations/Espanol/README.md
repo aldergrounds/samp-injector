@@ -210,8 +210,8 @@ La organización de las constantes por categoría facilita la comprensión de su
    - `CMD_ARG_PASSWORD_LENGTH`: La longitud del prefijo del argumento de contraseña (4 caracteres).
 
 - **Error Message Titles**
-   - `ERROR_TITLE_SAMP`: Título predeterminado para cuadros de diálogo de error relacionados con fallas de SA-MP (`"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Título predeterminado para cuadros de diálogo de error relacionados con fallas de OMP (`"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Título predeterminado para cuadros de diálogo de error relacionados con fallas de SA-MP (`"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Título predeterminado para cuadros de diálogo de error relacionados con fallas de OMP (`"OMP Injector Error"`).
 
 - **Process Creation Flags**
    - `CREATE_SUSPENDED`: Flag que instruye al sistema operativo a crear un proceso y su hilo principal en un estado suspendido (`0x00000004`). Esto es fundamental para la inyección de la DLL antes de que el juego comience a ejecutarse.
@@ -539,7 +539,7 @@ Este es el último error posible en el ciclo de inyección.
 
 ## Licencia
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Este software está licenciado bajo los términos de la Licencia MIT ("Licencia"); puede utilizar este software de acuerdo con las condiciones de la Licencia. Puede obtener una copia de la Licencia en: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -560,7 +560,7 @@ Todas las copias o partes sustanciales del software deben incluir:
 
 #### 3. Derechos de Autor
 
-El software y toda la documentación asociada están protegidos por leyes de derechos de autor. La **SA-MP Programming Community** mantiene la titularidad de los derechos de autor originales del software.
+El software y toda la documentación asociada están protegidos por leyes de derechos de autor. La **AlderGrounds** mantiene la titularidad de los derechos de autor originales del software.
 
 #### 4. Exención de Garantías y Limitación de Responsabilidad
 

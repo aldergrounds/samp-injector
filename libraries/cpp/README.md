@@ -219,8 +219,8 @@ A organização das constantes por categoria facilita a compreensão de seu prop
    - `INJECT_TYPE_OMP`: Um `const wchar_t*` para a representação em string do tipo de injeção OMP (valor: `L"omp"`).
 
 - **Títulos para Mensagens de Erro (`Error message titles`)**
-   - `ERROR_TITLE_SAMP`: Um `const wchar_t*` que define o título padrão para caixas de diálogo de erro relacionadas a falhas de SA-MP (valor: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Um `const wchar_t*` que define o título padrão para caixas de diálogo de erro relacionadas a falhas de OMP (valor: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Um `const wchar_t*` que define o título padrão para caixas de diálogo de erro relacionadas a falhas de SA-MP (valor: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Um `const wchar_t*` que define o título padrão para caixas de diálogo de erro relacionadas a falhas de OMP (valor: `L"OMP Injector Error"`).
 
 - **Flags de Criação de Processo (`Process creation`)**
    - `PROCESS_CREATION_FLAGS`: Um `DWORD` que encapsula as bandeiras passadas para `CreateProcessW`. Crucialmente, inclui `CREATE_SUSPENDED` (`0x00000004`), que inicia o processo do jogo em um estado pausado, e `DETACHED_PROCESS` (`0x00000008`), que desvincula o novo processo do console do processo pai.
@@ -758,7 +758,7 @@ Este é o último ponto de falha possível no ciclo de injeção.
 
 ## Licença
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Este software é licenciado sob os termos da Licença MIT ("Licença"); você pode utilizar este software de acordo com as condições da Licença. Uma cópia da Licença pode ser obtida em: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ Todas as cópias ou partes substanciais do software devem incluir:
 
 #### 3. Direitos Autorais
 
-O software e toda a documentação associada são protegidos por leis de direitos autorais. A **SA-MP Programming Community** mantém a titularidade dos direitos autorais originais do software.
+O software e toda a documentação associada são protegidos por leis de direitos autorais. A **AlderGrounds** mantém a titularidade dos direitos autorais originais do software.
 
 #### 4. Isenção de Garantias e Limitação de Responsabilidade
 

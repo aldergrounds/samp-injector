@@ -210,8 +210,8 @@ Organisationen av konstanter per kategori underlättar förståelsen av deras sy
    - `CMD_ARG_PASSWORD_LENGTH`: Längden på prefixet för lösenordsargumentet (4 tecken).
 
 - **Error Message Titles**
-   - `ERROR_TITLE_SAMP`: Standardtitel för felmeddelanderutor relaterade till SA-MP-fel (`"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: Standardtitel för felmeddelanderutor relaterade till OMP-fel (`"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: Standardtitel för felmeddelanderutor relaterade till SA-MP-fel (`"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: Standardtitel för felmeddelanderutor relaterade till OMP-fel (`"OMP Injector Error"`).
 
 - **Process Creation Flags**
    - `CREATE_SUSPENDED`: Flagga som instruerar operativsystemet att skapa en process och dess huvudtråd i ett suspenderat tillstånd (`0x00000004`). Detta är grundläggande för DLL-injektionen innan spelet börjar köras.
@@ -539,7 +539,7 @@ Detta är det sista möjliga felet i injektionscykeln.
 
 ## Licens
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Denna programvara är licensierad under villkoren i MIT-licensen ("Licensen"); du får använda denna programvara i enlighet med Licensens villkor. En kopia av Licensen kan erhållas på: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -560,7 +560,7 @@ Alla kopior eller väsentliga delar av programvaran måste innehålla:
 
 #### 3. Upphovsrätt
 
-Programvaran och all tillhörande dokumentation skyddas av upphovsrättslagar. **SA-MP Programming Community** behåller den ursprungliga upphovsrätten till programvaran.
+Programvaran och all tillhörande dokumentation skyddas av upphovsrättslagar. **AlderGrounds** behåller den ursprungliga upphovsrätten till programvaran.
 
 #### 4. Garantifriskrivning och ansvarsbegränsning
 

@@ -210,8 +210,8 @@ L'organisation des constantes par catégorie facilite la compréhension de leur 
    - `CMD_ARG_PASSWORD_LENGTH` : La longueur du préfixe de l'argument du mot de passe (4 caractères).
 
 - **Error Message Titles**
-   - `ERROR_TITLE_SAMP` : Titre par défaut pour les boîtes de dialogue d'erreur liées aux échecs de SA-MP (`"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP` : Titre par défaut pour les boîtes de dialogue d'erreur liées aux échecs de OMP (`"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP` : Titre par défaut pour les boîtes de dialogue d'erreur liées aux échecs de SA-MP (`"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP` : Titre par défaut pour les boîtes de dialogue d'erreur liées aux échecs de OMP (`"OMP Injector Error"`).
 
 - **Process Creation Flags**
    - `CREATE_SUSPENDED` : Drapeau qui ordonne au système d'exploitation de créer un processus et son thread principal dans un état suspendu (`0x00000004`). Ceci est fondamental pour l'injection de la DLL avant que le jeu ne commence à s'exécuter.
@@ -539,7 +539,7 @@ C'est la dernière erreur possible dans le cycle d'injection.
 
 ## Licence
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Ce logiciel est sous licence selon les termes de la Licence MIT ("Licence"); vous pouvez utiliser ce logiciel conformément aux conditions de la Licence. Une copie de la Licence peut être obtenue à: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -560,7 +560,7 @@ Toutes les copies ou parties substantielles du logiciel doivent inclure:
 
 #### 3. Droits d'Auteur
 
-Le logiciel et toute la documentation associée sont protégés par les lois sur le droit d'auteur. La **SA-MP Programming Community** conserve la propriété des droits d'auteur originaux du logiciel.
+Le logiciel et toute la documentation associée sont protégés par les lois sur le droit d'auteur. La **AlderGrounds** conserve la propriété des droits d'auteur originaux du logiciel.
 
 #### 4. Exclusion de Garantie et Limitation de Responsabilité
 

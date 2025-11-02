@@ -219,8 +219,8 @@ Sabitlerin kategoriye göre düzenlenmesi, amaçlarının anlaşılmasını kola
    - `INJECT_TYPE_OMP`: OMP enjeksiyon türünün string temsilcisi için bir `const wchar_t*` (değer: `L"omp"`).
 
 - **Hata Mesajı Başlıkları (`Error message titles`)**
-   - `ERROR_TITLE_SAMP`: SA-MP hatalarıyla ilgili hata diyalog kutuları için varsayılan başlığı tanımlayan bir `const wchar_t*` (değer: `L"SA-MP Injector Error - SPC"`).
-   - `ERROR_TITLE_OMP`: OMP hatalarıyla ilgili hata diyalog kutuları için varsayılan başlığı tanımlayan bir `const wchar_t*` (değer: `L"OMP Injector Error - SPC"`).
+   - `ERROR_TITLE_SAMP`: SA-MP hatalarıyla ilgili hata diyalog kutuları için varsayılan başlığı tanımlayan bir `const wchar_t*` (değer: `L"SA-MP Injector Error"`).
+   - `ERROR_TITLE_OMP`: OMP hatalarıyla ilgili hata diyalog kutuları için varsayılan başlığı tanımlayan bir `const wchar_t*` (değer: `L"OMP Injector Error"`).
 
 - **Süreç Oluşturma Bayrakları (`Process creation`)**
    - `PROCESS_CREATION_FLAGS`: `CreateProcessW`'e geçirilen bayrakları kapsayan bir `DWORD`. Özellikle, oyun sürecini duraklatılmış bir durumda başlatan `CREATE_SUSPENDED` (`0x00000004`) ve yeni süreci ana sürecin konsolundan ayıran `DETACHED_PROCESS` (`0x00000008`) içerir.
@@ -758,7 +758,7 @@ Bu, enjeksiyon döngüsündeki son olası arıza noktasıdır.
 
 ## Lisans
 
-Copyright © **SA-MP Programming Community**
+Copyright © **AlderGrounds**
 
 Bu yazılım MIT Lisansı ("Lisans") şartları altında lisanslanmıştır; bu yazılımı Lisans şartlarına uygun olarak kullanabilirsiniz. Lisansın bir kopyasını şu adresten edinebilirsiniz: [MIT License](https://opensource.org/licenses/MIT)
 
@@ -779,7 +779,7 @@ Yazılımın tüm kopyaları veya önemli parçaları şunları içermelidir:
 
 #### 3. Telif Hakları
 
-Yazılım ve ilgili tüm dokümantasyon telif hakkı yasaları ile korunmaktadır. **SA-MP Programming Community** yazılımın orijinal telif haklarını elinde tutmaktadır.
+Yazılım ve ilgili tüm dokümantasyon telif hakkı yasaları ile korunmaktadır. **AlderGrounds** yazılımın orijinal telif haklarını elinde tutmaktadır.
 
 #### 4. Garanti Reddi ve Sorumluluk Sınırlaması
 
