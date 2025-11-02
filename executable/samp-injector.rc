@@ -32,7 +32,7 @@
 
 #include <windows.h>
 
-AG_ICON ICON "icons\ag.ico"
+AG_ICON ICON "icons\\ag.ico"
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION 1,0,0,0
