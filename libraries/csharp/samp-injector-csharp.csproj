@@ -1,4 +1,4 @@
-﻿<!-- =========================================================================== *
+<!-- =========================================================================== *
  * SA-MP Injector - C# injection ↓                                               *
  * library for SA-MP (San Andreas Multiplayer) and OMP (Open Multiplayer)        *
  * ============================================================================= *
@@ -36,5 +36,23 @@
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <!---->
+        <PackageId>SA-MPInjector</PackageId>
+        <Version>1.0.1</Version>
+        <Authors>AlderGrounds</Authors>
+        <Description>The SA-MP Injector C# library is a C# solution designed to simplify automated launching and connection of San Andreas Multiplayer (SA-MP) and Open Multiplayer (OMP) clients to servers. It works as a DLL-injection tool, programmatically loading samp.dll or omp-client.dll into the Grand Theft Auto: San Andreas process (gta_sa.exe). Its primary purpose is to let other C# applications (for example, custom launchers, server-management tools, or utilities) start the game with specific parameters (nickname, IP, port, and password) in a way that’s transparent to the user, automating the connection to an SA-MP/OMP server.</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/aldergrounds/samp-injector/tree/main/libraries/csharp</RepositoryUrl>
+        <Copyright>Copyright 2025 AlderGrounds</Copyright>
+        <PackageTags>sa-mp; omp; injector; csharp; dll-injection</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 </Project>
